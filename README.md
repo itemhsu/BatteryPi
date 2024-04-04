@@ -22,6 +22,37 @@ sudo apt install i2c-tools
 ### Loading I2C Kernel Module:
 append `i2c-dev` to `/etc/modules`
 
-### check booting config
+### Check booting config
 make sure `dtparam=i2c_arm=on` in `/boot/firmware/config.txt`
 
+### List I2C bus
+```
+root@aicar-fae30a:/home/pi# dmesg | grep i2c
+[    1.630223] i2c /dev entries driver
+[    2.365666] i2c i2c-11: Added multiplexed i2c bus 0
+[    2.365899] i2c i2c-11: Added multiplexed i2c bus 10
+```
+### Detceting I2C
+The bus contains `36` is what we want.
+```
+root@aicar-fae30a:/home/pi# sudo i2cdetect -y 10
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- 0c -- -- -- 
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 2f 
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+50: -- 51 -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+70: -- -- -- -- -- -- -- --                         
+root@aicar-fae30a:/home/pi# sudo i2cdetect -y 0
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- -- 
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+30: -- -- -- -- -- -- 36 -- -- -- -- -- -- -- -- -- 
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+70: -- -- -- -- -- -- -- --
+```

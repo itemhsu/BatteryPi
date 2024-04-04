@@ -11,4 +11,9 @@ https://item.taobao.com/item.htm?_u=420ekghrq84fe9&id=533982828160&spm=a1z09.2.0
 <img width="248" alt="image" src="https://github.com/itemhsu/BatteryPi/assets/25599185/3a0f82fe-f73c-4734-968b-f6ef5287cd31">
 
 ## Pin Connection
+<img width="540" alt="image" src="https://github.com/itemhsu/BatteryPi/assets/25599185/ecf6c59b-ac07-4877-83ad-b89f81187810">
+<img width="360" alt="image" src="https://github.com/itemhsu/BatteryPi/assets/25599185/eaec721c-a29a-47df-b53d-72c6040688bc">
+
+
+
 

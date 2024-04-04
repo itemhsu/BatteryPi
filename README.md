@@ -5,3 +5,9 @@ The Li-ion battery voltage does not linearly correlate with the State of Charge 
 
 ## Solution MAX17043
 https://www.analog.com/media/en/technical-documentation/data-sheets/max17043-max17044.pdf
+
+## Module
+https://item.taobao.com/item.htm?_u=420ekghrq84fe9&id=533982828160&spm=a1z09.2.0.0.449c2e8d0WaVnR
+
+## Pin Connection
+

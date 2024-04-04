@@ -22,5 +22,6 @@ sudo apt install i2c-tools
 ### Loading I2C Kernel Module:
 append `i2c-dev` to `/etc/modules`
 
-
+### check booting config
+make sure `dtparam=i2c_arm=on` in `/boot/firmware/config.txt`
 

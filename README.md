@@ -102,6 +102,13 @@ bus.close()
 ## File List
 | Name  | Function |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| BatteryPi.pptx | Wiring diagram |
+| battery_data.xlsx | Small test result with plot|
+| battery_data_2.xlsx | Large test result with plot|
+| example.py | Basic using example |
+| README.md  | This file |
+| battery_data_2.csv | Large test raw data from csvSoc.py|
+| csvSoc.py | Quering voltage and SoC for each second and save to csv file |
+| testPattern.py| Generating the testing pattern that driving motor 30s followed by resting 30s. |
+
 

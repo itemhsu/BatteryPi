@@ -8,6 +8,7 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/max17043-max
 
 ## Module
 https://item.taobao.com/item.htm?_u=420ekghrq84fe9&id=533982828160&spm=a1z09.2.0.0.449c2e8d0WaVnR
+<img width="248" alt="image" src="https://github.com/itemhsu/BatteryPi/assets/25599185/3a0f82fe-f73c-4734-968b-f6ef5287cd31">
 
 ## Pin Connection
 
